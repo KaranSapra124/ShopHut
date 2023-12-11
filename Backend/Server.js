@@ -22,7 +22,7 @@ mongoose.connect(process.env.MongoDBUrl)
 app.use(express.json())
 console.log(process.env);
 app.use(cors({
-    origin: process.env.Url || "https://657611455d23535d74e34bf9--golden-moonbeam-e61d78.netlify.app",
+    origin: process.env.Url || "https://golden-moonbeam-e61d78.netlify.app/",
     credentials: true,
     optionsSuccessStatus: 200
 }))
