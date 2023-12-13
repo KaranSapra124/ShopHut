@@ -11,7 +11,7 @@ const app = express()
 // const { Url, Key_Id, Key_Secret } = require("../src/Secret/Secret")
 // const { MongoDBUrl } = require("../src/Secret/Secret");
 // console.log(process.env.MongoDBUrl);
-mongoose.connect(process.env.MongoDBUrl)
+mongoose.connect(process.env.MONGODB_uRL)
     .then(() => {
         return console.log("MongoDb Successfully Connected");
     })
@@ -21,7 +21,7 @@ mongoose.connect(process.env.MongoDBUrl)
 
 app.use(express.json())
 app.use(cors({
-    origin:process.env.Url || '*',
+    origin:process.env.FRONTEND_URL,
     credentials: true
 }))
 
