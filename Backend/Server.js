@@ -11,7 +11,7 @@ const app = express()
 // const { Url, Key_Id, Key_Secret } = require("../src/Secret/Secret")
 // const { MongoDBUrl } = require("../src/Secret/Secret");
 // console.log(process.env.MongoDBUrl);
-mongoose.connect(process.env.MONGODB_uRL)
+mongoose.connect(process.env.MONGODB_URL)
     .then(() => {
         return console.log("MongoDb Successfully Connected");
     })
